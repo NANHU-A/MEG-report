@@ -1,0 +1,593 @@
+\documentclass[UTF8,zihao=-4]{ctexart}
+\usepackage[a4paper,landscape,margin=0.9cm]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{array,booktabs,tabularx}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\pagestyle{empty}
+
+\definecolor{cblue}{HTML}{2B6CB0}
+\definecolor{corange}{HTML}{C05621}
+\definecolor{cgreen}{HTML}{2F855A}
+\definecolor{cred}{HTML}{B83280}
+\definecolor{clight}{HTML}{F7FAFC}
+\definecolor{csoft}{HTML}{EDF2F7}
+
+\newcommand{\pagetitle}[1]{\textbf{\Large #1}\par\vspace{0.15cm}\hrule\vspace{0.25cm}}
+\newcommand{\smallnote}[1]{{\footnotesize\color{black!70}#1}}
+
+\begin{document}
+
+% Page 1
+\begin{center}
+\vspace*{1.8cm}
+{\Large w w w . c i e c . c o m\par}
+\vspace{1.4cm}
+{\fontsize{28}{34}\selectfont\bfseries 乙二醇框架报告\par}
+\vspace{0.4cm}
+{\Large 汇报人:（可填写）\par}
+\vspace{0.3cm}
+{\Large 2026.04\par}
+\vfill
+\end{center}
+\newpage
+
+% Page 2
+\pagetitle{品种框架报告}
+\begin{tabular}{p{0.18\textwidth} p{0.76\textwidth}}
+一、产业结构 & 二、全球供需格局\\
+三、国内供需格局 & 四、价格价差\\
+五、交易标的 & \\
+\end{tabular}
+
+\vspace{0.5cm}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (13.8,4.7);
+  \node[anchor=west,font=\large\bfseries] at (0.35,4.05) {本报告的研究主线};
+  \node[anchor=west,align=left,text width=12.9cm] at (0.35,3.25) {乙二醇作为聚酯链关键中间体，研究重点不在单点价格，而在“原料-供给-库存-需求-价差”的联动。};
+  \node[draw,rounded corners=2mm,fill=csoft,minimum width=2.4cm,minimum height=0.9cm] (a) at (1.6,1.6) {原料成本};
+  \node[draw,rounded corners=2mm,fill=csoft,minimum width=2.4cm,minimum height=0.9cm] (b) at (4.2,1.6) {装置开工};
+  \node[draw,rounded corners=2mm,fill=csoft,minimum width=2.4cm,minimum height=0.9cm] (c) at (6.8,1.6) {进口到港};
+  \node[draw,rounded corners=2mm,fill=csoft,minimum width=2.4cm,minimum height=0.9cm] (d) at (9.4,1.6) {港口库存};
+  \node[draw,rounded corners=2mm,fill=csoft,minimum width=2.4cm,minimum height=0.9cm] (e) at (12.0,1.6) {聚酯需求};
+  \draw[-{Stealth[length=3mm]},thick] (a) -- (b);
+  \draw[-{Stealth[length=3mm]},thick] (b) -- (c);
+  \draw[-{Stealth[length=3mm]},thick] (c) -- (d);
+  \draw[-{Stealth[length=3mm]},thick] (d) -- (e);
+\end{tikzpicture}
+
+\newpage
+
+% Page 3
+\pagetitle{一、产业结构}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0.2,3.6) rectangle (3.8,5.2);
+  \draw[rounded corners=2mm,fill=clight] (4.4,3.6) rectangle (8.2,5.2);
+  \draw[rounded corners=2mm,fill=clight] (8.8,3.6) rectangle (12.0,5.2);
+  \draw[rounded corners=2mm,fill=corange!10] (10.0,2.0) rectangle (12.7,2.8);
+  \draw[rounded corners=2mm,fill=corange!10] (10.0,1.0) rectangle (12.7,1.8);
+  \draw[rounded corners=2mm,fill=corange!10] (10.0,0.0) rectangle (12.7,0.8);
+  \node[font=\bfseries] at (2.0,4.4) {上游原料};
+  \node at (2.0,4.0) {原油 / 煤 / 天然气};
+  \node[font=\bfseries] at (6.3,4.4) {生产工艺};
+  \node at (6.3,4.0) {EO水合 / 煤制 / 合成气};
+  \node[font=\bfseries] at (10.4,4.4) {乙二醇};
+  \node at (10.4,4.0) {聚酯链关键中间体};
+  \node[font=\bfseries] at (11.35,2.4) {涤纶长丝};
+  \node[font=\bfseries] at (11.35,1.4) {涤纶短纤};
+  \node[font=\bfseries] at (11.35,0.4) {PET瓶片};
+  \draw[-{Stealth[length=3mm]},thick] (3.8,4.4) -- (4.4,4.4);
+  \draw[-{Stealth[length=3mm]},thick] (8.2,4.4) -- (8.8,4.4);
+  \draw[-{Stealth[length=3mm]},thick] (11.0,3.8) -- (11.0,2.8);
+  \draw[-{Stealth[length=3mm]},thick] (11.0,3.8) -- (11.0,1.8);
+  \draw[-{Stealth[length=3mm]},thick] (11.0,3.8) -- (11.0,0.8);
+\end{tikzpicture}
+
+\vspace{0.2cm}
+\begin{tabular}{|>{\raggedright\arraybackslash}p{3.8cm}|>{\raggedright\arraybackslash}p{4.2cm}|>{\raggedright\arraybackslash}p{8.0cm}|}
+\hline
+\rowcolor{csoft}\textbf{终端方向} & \textbf{主要产品} & \textbf{行业理解}\\\hline
+纤维 & 涤纶长丝 & 服装、家纺、工业丝\\\hline
+纤维 & 涤纶短纤 & 填充、无纺、纺织\\\hline
+包装 & PET瓶片 & 饮料瓶、食品包装\\\hline
+\end{tabular}
+
+\smallnote{图3页核心结论：乙二醇是聚酯链条的关键中间体，主矛盾通常先体现在港口库存与基差上。}
+
+\vspace{0.15cm}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (13.8,1.0);
+  \node at (2.2,0.5) {\small 成本看原料};
+  \node at (5.8,0.5) {\small 供给看开工};
+  \node at (9.2,0.5) {\small 需求看聚酯};
+  \node at (12.1,0.5) {\small 结果看库存};
+\end{tikzpicture}
+
+\newpage
+
+% Page 4
+\pagetitle{产业结构}
+\begin{tabular}{p{0.49\textwidth} p{0.49\textwidth}}
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0.1,3.8) rectangle (6.9,5.0);
+  \draw[rounded corners=2mm,fill=clight] (0.1,2.1) rectangle (6.9,3.3);
+  \draw[rounded corners=2mm,fill=clight] (0.1,0.4) rectangle (6.9,1.6);
+  \node[font=\bfseries] at (3.5,4.5) {石脑油/乙烯路线};
+  \node at (3.5,4.1) {原油 → 石脑油 → 乙烯 → EO → EG};
+  \node[font=\bfseries] at (3.5,2.8) {煤制乙二醇路线};
+  \node at (3.5,2.4) {煤炭 → 合成气 → 中间体 → EG};
+  \node[font=\bfseries] at (3.5,1.1) {气头/合成气路线};
+  \node at (3.5,0.7) {天然气 → 合成气 → 中间体 → EG};
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[->,thick] (0,0) -- (0,4.9) node[above] {成本相对高低};
+  \draw[->,thick] (0,0) -- (5.5,0) node[right] {工艺路线};
+  \fill[cblue!45] (1.0,1.0) rectangle (1.7,3.8);
+  \fill[corange!50] (2.5,1.4) rectangle (3.2,3.1);
+  \fill[cgreen!45] (4.0,1.2) rectangle (4.7,3.4);
+  \node[below] at (1.35,0) {石脑油};
+  \node[below] at (2.85,0) {煤制};
+  \node[below] at (4.35,0) {气头};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{4.0cm}|p{4.1cm}|p{4.6cm}|p{3.8cm}|}
+\hline
+\rowcolor{csoft}\textbf{工艺路线} & \textbf{核心原料} & \textbf{主要特点} & \textbf{研究重点}\\\hline
+石脑油/乙烯 & 原油 & 成熟、规模化、与炼化链条联动 & 原油价格、炼厂利润\\\hline
+煤制 & 煤炭 & 原料本地化、利润波动大 & 煤价、装置效率、环保约束\\\hline
+天然气/合成气 & 天然气/合成气 & 区域资源属性强 & 气价、地区供给条件\\\hline
+\end{tabular}
+
+\smallnote{图4页解读：不同工艺的利润弹性不同，决定了供给响应速度。}
+
+\vspace{0.15cm}
+\begin{tabular}{|p{4.4cm}|p{4.4cm}|p{4.4cm}|}
+\hline
+\rowcolor{csoft}\textbf{工艺特征} & \textbf{优势} & \textbf{约束}\\\hline
+油头 & 工艺成熟 & 随油价波动\\\hline
+煤头 & 原料本地化 & 能耗和环保约束\\\hline
+气头 & 资源稳定时表现好 & 区域依赖强\\\hline
+\end{tabular}
+
+\newpage
+
+% Page 5
+\pagetitle{供需指标}
+\begin{tabular}{p{0.52\textwidth} p{0.42\textwidth}}
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (6.5,4.5);
+  \draw[rounded corners=2mm,fill=clight] (0.4,3.3) rectangle (2.8,4.0);
+  \draw[rounded corners=2mm,fill=clight] (3.8,3.3) rectangle (6.2,4.0);
+  \draw[rounded corners=2mm,fill=clight] (0.4,1.8) rectangle (2.8,2.5);
+  \draw[rounded corners=2mm,fill=clight] (3.8,1.8) rectangle (6.2,2.5);
+  \draw[rounded corners=2mm,fill=csoft] (1.7,0.4) rectangle (4.8,1.1);
+  \node at (1.6,3.65) {成本};
+  \node at (5.0,3.65) {开工};
+  \node at (1.6,2.15) {进口};
+  \node at (5.0,2.15) {库存};
+  \node at (3.25,0.75) {聚酯负荷 / 终端需求};
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=cred!10] (0,3.1) rectangle (3.4,4.1);
+  \draw[rounded corners=2mm,fill=corange!10] (4.0,3.1) rectangle (7.4,4.1);
+  \draw[rounded corners=2mm,fill=cgreen!10] (0,1.3) rectangle (3.4,2.3);
+  \draw[rounded corners=2mm,fill=cblue!10] (4.0,1.3) rectangle (7.4,2.3);
+  \node at (1.7,3.6) {高库存\\弱基差};
+  \node at (5.7,3.6) {低库存\\强基差};
+  \node at (1.7,1.8) {开工上行\\需求改善};
+  \node at (5.7,1.8) {开工回落\\需求走弱};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{5.0cm}|p{10.8cm}|}
+\hline
+\rowcolor{csoft}\textbf{研究指标} & \textbf{观察含义}\\\hline
+成本 & 决定边际供给与利润中枢\\\hline
+开工 & 决定供给响应速度\\\hline
+进口 & 决定短期边际压力\\\hline
+库存 & 决定现货和盘面强弱\\\hline
+\end{tabular}
+
+\smallnote{图5页解读：指标之间要联动看，单一指标容易误判方向。}
+
+\vspace{0.15cm}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (13.8,1.1);
+  \node at (1.7,0.55) {\small 成本};
+  \node at (4.7,0.55) {\small 开工};
+  \node at (7.7,0.55) {\small 进口};
+  \node at (10.7,0.55) {\small 库存};
+  \node at (12.8,0.55) {\small 需求};
+\end{tikzpicture}
+
+\newpage
+
+% Page 6
+\pagetitle{二、全球供需格局}
+\begin{tabular}{p{0.49\textwidth} p{0.49\textwidth}}
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=cblue!10] (0.2,2.1) rectangle (2.4,3.3);
+  \draw[rounded corners=2mm,fill=corange!10] (2.8,2.1) rectangle (5.0,3.3);
+  \draw[rounded corners=2mm,fill=cgreen!10] (5.6,2.1) rectangle (7.8,3.3);
+  \node at (1.3,2.9) {中东\\出口型产区};
+  \node at (3.9,2.9) {北美\\远洋供给};
+  \node at (6.7,2.9) {亚洲\\生产+消费+进口};
+  \node[align=left] at (4.0,0.8) {\small 供应端看出口边际、物流与套利窗口。};
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=cblue!10] (0.2,2.1) rectangle (2.4,3.3);
+  \draw[rounded corners=2mm,fill=corange!10] (2.8,2.1) rectangle (5.0,3.3);
+  \draw[rounded corners=2mm,fill=cgreen!10] (5.6,2.1) rectangle (7.8,3.3);
+  \node at (1.3,2.9) {长丝\\服装/家纺};
+  \node at (3.9,2.9) {短纤\\填充/无纺};
+  \node at (6.7,2.9) {瓶片\\包装/饮料};
+  \node[align=left] at (4.0,0.8) {\small 需求端集中于聚酯链条，终端改善先反映在聚酯。};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{4.2cm}|p{11.6cm}|}
+\hline
+\rowcolor{csoft}\textbf{全球供需要点} & \textbf{说明}\\\hline
+供应结构 & 中东、北美和亚洲共同构成边际供给\\\hline
+需求结构 & 需求高度集中于聚酯产业链\\\hline
+影响因素 & 能源价格、检修、国际贸易与终端消费\\\hline
+\end{tabular}
+
+\smallnote{图6页结论：全球供需的关键不是静态产量，而是区域边际流向。}
+
+\vspace{0.15cm}
+\begin{tabular}{|p{4.3cm}|p{4.3cm}|p{4.3cm}|p{4.3cm}|}
+\hline
+\rowcolor{csoft}\textbf{中东} & \textbf{北美} & \textbf{亚洲} & \textbf{其他}\\\hline
+出口边际 & 远洋供给 & 本地定价 & 扰动因素\\\hline
+\end{tabular}
+
+\newpage
+
+% Page 7
+\pagetitle{全球供应格局}
+\begin{tabular}{p{0.48\textwidth} p{0.48\textwidth}}
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=cblue!10] (0.1,2.4) rectangle (6.8,3.4);
+  \draw[rounded corners=2mm,fill=corange!10] (0.1,1.1) rectangle (6.8,2.1);
+  \draw[rounded corners=2mm,fill=cgreen!10] (0.1,-0.2) rectangle (6.8,0.8);
+  \node at (3.45,2.9) {中东：成本低，出口导向强};
+  \node at (3.45,1.6) {北美：配套完善，远洋供给活跃};
+  \node at (3.45,0.3) {亚洲：消费中心，决定现货定价};
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (7.0,4.8);
+  \node[align=left,text width=6.4cm] at (3.5,3.4) {\bfseries 供应逻辑\\[0.2em]\small 中东决定出口边际，北美决定远洋流向，亚洲决定现货定价。};
+  \node[align=left,text width=6.4cm] at (3.5,1.8) {\small 供给并非静态总量，而是看谁在出口、谁在消化、谁在补库。};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{4.0cm}|p{4.2cm}|p{8.0cm}|}
+\hline
+\rowcolor{csoft}\textbf{区域} & \textbf{属性} & \textbf{市场影响}\\\hline
+中东 & 低成本出口 & 对亚洲价格影响明显\\\hline
+北美 & 远洋供给 & 受套利窗口驱动\\\hline
+亚洲 & 生产/消费/进口 & 决定本地现货与库存\\\hline
+\end{tabular}
+
+\vspace{0.15cm}
+\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|}
+\hline
+\rowcolor{csoft}\textbf{工艺特征} & \textbf{优势} & \textbf{约束}\\\hline
+油头 & 工艺成熟 & 随油价波动\\\hline
+煤头 & 原料本地化 & 能耗和环保约束\\\hline
+气头 & 资源稳定时表现好 & 区域依赖强\\\hline
+\end{tabular}
+
+\newpage
+
+% Page 8
+\pagetitle{全球需求格局}
+\begin{tabular}{p{0.48\textwidth} p{0.48\textwidth}}
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[cblue!20,fill=cblue!20] (2.0,2.1) circle (1.4);
+  \draw[corange!20,fill=corange!20] (4.7,2.1) circle (1.4);
+  \draw[cgreen!20,fill=cgreen!20] (7.4,2.1) circle (1.4);
+  \node at (2.0,2.1) {长丝};
+  \node at (4.7,2.1) {短纤};
+  \node at (7.4,2.1) {瓶片};
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (7.0,4.8);
+  \node[align=left,text width=6.4cm] at (3.5,3.4) {\bfseries 需求传导\\[0.2em]\small 终端订单改善，先反映在聚酯开工，再传导到乙二醇去库。};
+  \node[align=left,text width=6.4cm] at (3.5,1.8) {\small 乙二醇不是独立创造需求的品种，而是聚酯链对终端消费的映射。};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{4.0cm}|p{4.0cm}|p{8.2cm}|}
+\hline
+\rowcolor{csoft}\textbf{需求方向} & \textbf{主要去向} & \textbf{研究理解}\\\hline
+纤维级 & 长丝/短纤 & 占比最高，决定基础需求\\\hline
+包装级 & PET瓶片 & 更贴近消费升级与包装需求\\\hline
+其他 & 薄膜/日化等 & 边际贡献较小\\\hline
+\end{tabular}
+
+\vspace{0.15cm}
+\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|}
+\hline
+\rowcolor{csoft}\textbf{需求驱动} & \textbf{先行信号} & \textbf{验证方式}\\\hline
+终端订单 & 纺服/包装接单 & 看聚酯开工\\\hline
+聚酯补库 & 下游采购增加 & 看乙二醇去库\\\hline
+旺季预期 & 开工持续抬升 & 看现货/基差\\\hline
+\end{tabular}
+
+\newpage
+
+% Page 9
+\pagetitle{全球年度平衡及物流}
+\begin{tabular}{p{0.48\textwidth} p{0.48\textwidth}}
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=cblue!10] (0.2,2.0) rectangle (1.8,3.0);
+  \draw[rounded corners=2mm,fill=corange!10] (2.7,2.0) rectangle (4.3,3.0);
+  \draw[rounded corners=2mm,fill=cgreen!10] (5.2,2.0) rectangle (6.8,3.0);
+  \draw[-{Stealth[length=3mm]},thick] (1.8,2.5) -- (2.7,2.5);
+  \draw[-{Stealth[length=3mm]},thick] (4.3,2.5) -- (5.2,2.5);
+  \draw[rounded corners=2mm,fill=clight] (1.0,-0.1) rectangle (6.0,0.9);
+  \node at (3.5,0.4) {价差扩大 → 货流增强\quad 价差收窄 → 货流减弱};
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (7.0,4.8);
+  \node[align=left,text width=6.4cm] at (3.5,3.4) {\bfseries 物流与价差\\[0.2em]\small 物流是区域价差的结果，而不是独立变量。};
+  \node[align=left,text width=6.4cm] at (3.5,1.8) {\small 当区域间价差扩大，贸易流增强；当价差收敛，贸易流放缓。};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+\smallnote{图9页解读：全球平衡先看边际出口，再看亚洲吸收能力。}
+
+\vspace{0.15cm}
+\begin{tabular}{|p{4.4cm}|p{4.4cm}|p{4.4cm}|}
+\hline
+\rowcolor{csoft}\textbf{物流方向} & \textbf{触发条件} & \textbf{市场含义}\\\hline
+中东到亚洲 & 套利打开 & 进口增加\\\hline
+北美到亚洲 & 海外价差扩大 & 远洋流入\\\hline
+亚洲内部调货 & 区域价差变化 & 库存再分配\\\hline
+\end{tabular}
+
+\newpage
+
+% Page 10
+\pagetitle{三、国内供需格局}
+\begin{tabular}{p{0.48\textwidth} p{0.48\textwidth}}
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=cblue!10] (0.2,2.1) rectangle (2.3,3.1);
+  \draw[rounded corners=2mm,fill=corange!10] (2.7,2.1) rectangle (4.8,3.1);
+  \draw[rounded corners=2mm,fill=cgreen!10] (5.2,2.1) rectangle (7.3,3.1);
+  \node at (1.25,2.6) {国产供给\\开工/检修};
+  \node at (3.75,2.6) {进口供给\\到港/船期};
+  \node at (6.25,2.6) {边际库存\\港口库存};
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=cblue!10] (0.2,2.1) rectangle (2.3,3.1);
+  \draw[rounded corners=2mm,fill=corange!10] (2.7,2.1) rectangle (4.8,3.1);
+  \draw[rounded corners=2mm,fill=cgreen!10] (5.2,2.1) rectangle (7.3,3.1);
+  \node at (1.25,2.6) {长丝\\核心消费};
+  \node at (3.75,2.6) {短纤\\功能消费};
+  \node at (6.25,2.6) {瓶片\\包装消费};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{5.0cm}|p{10.8cm}|}
+\hline
+\rowcolor{csoft}\textbf{研究维度} & \textbf{观察要点}\\\hline
+国产 & 看实际开工、检修和新增投放\\\hline
+进口 & 看到港、来源地和进口依赖度\\\hline
+需求 & 看聚酯长丝、短纤、瓶片\\\hline
+\end{tabular}
+
+\vspace{0.15cm}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (13.8,1.0);
+  \node at (2.0,0.5) {\small 国产看开工};
+  \node at (5.0,0.5) {\small 进口看到港};
+  \node at (8.0,0.5) {\small 需求看聚酯};
+  \node at (11.5,0.5) {\small 库存看港口};
+\end{tikzpicture}
+
+\newpage
+
+% Page 11
+\pagetitle{国内年度平衡及物流}
+\begin{tabular}{p{0.48\textwidth} p{0.48\textwidth}}
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=cred!10] (0.2,2.1) rectangle (2.1,3.1);
+  \draw[rounded corners=2mm,fill=corange!10] (2.5,2.1) rectangle (4.4,3.1);
+  \draw[rounded corners=2mm,fill=cgreen!10] (4.8,2.1) rectangle (6.7,3.1);
+  \node at (1.15,2.6) {累库\\供给>需求};
+  \node at (3.45,2.6) {横盘\\供需僵持};
+  \node at (5.75,2.6) {去库\\需求>供给};
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (7.0,4.8);
+  \node[align=left,text width=6.4cm] at (3.5,3.4) {\bfseries 港口库存与现货\\[0.2em]\small 港口库存是最敏感的现货观察点，通常领先盘面情绪变化。};
+  \node[align=left,text width=6.4cm] at (3.5,1.8) {\small 库存下降时现货偏强，库存上升时现货承压，库存横盘时市场更依赖预期交易。};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{4.0cm}|p{4.0cm}|p{8.2cm}|}
+\hline
+\rowcolor{csoft}\textbf{库存信号} & \textbf{常见含义} & \textbf{对价格的影响}\\\hline
+连续累库 & 供给偏松或需求走弱 & 压制现货和近月\\\hline
+连续去库 & 供给收缩或需求回暖 & 支撑现货和基差\\\hline
+高库存横盘 & 供需僵持 & 价格更依赖成本和预期\\\hline
+\end{tabular}
+
+\smallnote{图11页解读：库存是国内平衡的最直接结果变量。}
+
+\vspace{0.15cm}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (13.8,1.0);
+  \node at (2.0,0.5) {\small 港口};
+  \node at (5.0,0.5) {\small 厂内};
+  \node at (8.0,0.5) {\small 现货};
+  \node at (11.0,0.5) {\small 盘面};
+\end{tikzpicture}
+
+\newpage
+
+% Page 12
+\pagetitle{四、价格价差}
+\begin{tabular}{p{0.48\textwidth} p{0.48\textwidth}}
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (7.0,4.6);
+  \node at (0.9,3.8) {原料};
+  \node at (2.2,3.8) {利润};
+  \node at (3.5,3.8) {开工};
+  \node at (4.8,3.8) {库存};
+  \node at (6.1,3.8) {现货};
+  \draw[-{Stealth[length=3mm]},thick] (0.8,2.8) -- (5.8,2.8);
+  \node[align=left] at (3.5,1.4) {\small 成本锚决定下限\\库存决定短期强弱};
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (7.0,4.6);
+  \draw[rounded corners=2mm,fill=cblue!10] (0.8,3.0) rectangle (2.1,3.8);
+  \draw[rounded corners=2mm,fill=corange!10] (2.7,3.0) rectangle (4.0,3.8);
+  \draw[rounded corners=2mm,fill=cgreen!10] (4.6,3.0) rectangle (5.9,3.8);
+  \draw[rounded corners=2mm,fill=cred!10] (2.7,1.5) rectangle (4.0,2.3);
+  \node at (1.45,3.4) {利润};
+  \node at (3.35,3.4) {基差};
+  \node at (5.25,3.4) {月差};
+  \node at (3.35,1.9) {价差};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+\vspace{0.2cm}
+\smallnote{图12页解读：价格由成本、供需和预期共同决定。}
+
+\vspace{0.15cm}
+\begin{tabular}{|p{4.4cm}|p{4.4cm}|p{4.4cm}|}
+\hline
+\rowcolor{csoft}\textbf{变量} & \textbf{代表含义} & \textbf{常见交易}\\\hline
+利润 & 供给意愿 & 复产/停车\\\hline
+基差 & 现货松紧 & 现货/期货切换\\\hline
+月差 & 近远月预期 & 正套/反套\\\hline
+\end{tabular}
+
+\newpage
+
+% Page 13
+\pagetitle{五、交易标的}
+\begin{tabular}{p{0.48\textwidth} p{0.48\textwidth}}
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=cblue!10] (0.2,2.2) rectangle (2.1,3.2);
+  \draw[rounded corners=2mm,fill=corange!10] (2.5,2.2) rectangle (4.4,3.2);
+  \draw[rounded corners=2mm,fill=cgreen!10] (4.8,2.2) rectangle (6.7,3.2);
+  \node at (1.15,2.7) {套保};
+  \node at (3.45,2.7) {套利};
+  \node at (5.75,2.7) {投研};
+\end{tikzpicture}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (7.0,4.6);
+  \node[align=left,text width=6.4cm] at (3.5,3.1) {\bfseries 研究与交易框架\\[0.2em]\small 成本 → 供给 → 需求 → 结构 → 预期};
+  \node[align=left,text width=6.4cm] at (3.5,1.6) {\small 期货的价值在于管理价格风险，而不是简单预测价格。};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{4.0cm}|p{12.2cm}|}
+\hline
+\rowcolor{csoft}\textbf{应用场景} & \textbf{理解}\\\hline
+套保 & 现货企业锁定采购与销售利润\\\hline
+套利 & 基差、月差、跨品种与内外盘联动\\\hline
+研究 & 通过盘面观察市场预期变化\\\hline
+\end{tabular}
+
+\vspace{0.15cm}
+\begin{tabular}{|p{4.4cm}|p{4.4cm}|p{4.4cm}|}
+\hline
+\rowcolor{csoft}\textbf{动作} & \textbf{对象} & \textbf{目的}\\\hline
+套保 & 现货企业 & 锁利润\\\hline
+套利 & 价差结构 & 捕捉偏离\\\hline
+研究 & 盘面信号 & 形成观点\\\hline
+\end{tabular}
+
+\smallnote{图13页解读：交易工具的本质是把产业观点转化为风险管理。}
+
+\vspace{0.15cm}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[rounded corners=2mm,fill=clight] (0,0) rectangle (13.8,1.0);
+  \node at (2.5,0.5) {\small 套保是目的};
+  \node at (6.9,0.5) {\small 套利是手段};
+  \node at (11.2,0.5) {\small 研究是前提};
+\end{tikzpicture}
+
+\newpage
+
+% Page 14
+\begin{center}
+\vspace*{2.2cm}
+{\fontsize{24}{30}\selectfont\bfseries 结论\par}
+\vspace{0.8cm}
+{\large 乙二醇的中长期定价框架，应围绕成本中枢、装置开工、进口到港和聚酯需求四条主线展开。\\[0.6em]
+对于产业研究而言，真正重要的不是单次价格涨跌，而是判断供需矛盾在何时积累、何时缓解，以及这种变化如何通过库存和价差表现出来。\par}
+\vfill
+{\Large 谢 谢 观 看\par}
+\vspace{0.4cm}
+{\Large 2026年4月\par}
+\end{center}
+
+\end{document}

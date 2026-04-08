@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs><style>.t{font:700 28px Arial;fill:#1f2937}.h{font:700 20px Arial;fill:#1f2937}.b{font:18px Arial;fill:#1f2937}.s{font:15px Arial;fill:#6b7280}.box{fill:#fff;stroke:#374151;stroke-width:2;rx:14;ry:14}.x{fill:#eff6ff}.y{fill:#fef3c7}.z{fill:#ecfdf5}.a{stroke:#374151;stroke-width:3;fill:none;marker-end:url(#m)}</style><marker id="m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0,10 4,0 8" fill="#374151"/></marker></defs>
+  <text x="24" y="40" class="t">全球供应变化逻辑</text><rect x="40" y="90" width="1320" height="560" class="box"/>
+  <rect x="80" y="160" width="220" height="110" class="x"/><text x="135" y="205" class="h">原料价格</text><text x="120" y="240" class="s">油 / 煤 / 气</text>
+  <rect x="350" y="160" width="220" height="110" class="y"/><text x="390" y="205" class="h">装置检修</text><text x="385" y="240" class="s">计划/非计划</text>
+  <rect x="620" y="160" width="220" height="110" class="z"/><text x="675" y="205" class="h">出口能力</text><text x="660" y="240" class="s">中东/北美主导</text>
+  <rect x="890" y="160" width="220" height="110" class="x"/><text x="945" y="205" class="h">亚洲到港</text><text x="930" y="240" class="s">船期/套利窗口</text>
+  <rect x="1160" y="160" width="180" height="110" class="y"/><text x="1200" y="205" class="h">现货定价</text><text x="1188" y="240" class="s">港口库存</text>
+  <line x1="300" y1="215" x2="350" y2="215" class="a"/><line x1="570" y1="215" x2="620" y2="215" class="a"/><line x1="840" y1="215" x2="890" y2="215" class="a"/><line x1="1110" y1="215" x2="1160" y2="215" class="a"/>
+  <rect x="120" y="380" width="1160" height="140" class="box"/>
+  <text x="150" y="430" class="b">供给不是总量问题，而是区域边际流向问题。</text><text x="150" y="470" class="s">展示口径：当区域间价差扩大，贸易流增强；当价差收敛，贸易流减弱。</text>
+</svg>

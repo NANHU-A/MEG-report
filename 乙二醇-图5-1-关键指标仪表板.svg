@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs>
+    <style>
+      .t { font: 700 28px Arial, sans-serif; fill: #111827; }
+      .h { font: 700 20px Arial, sans-serif; fill: #111827; }
+      .b { font: 18px Arial, sans-serif; fill: #111827; }
+      .s { font: 15px Arial, sans-serif; fill: #6b7280; }
+      .box { fill: #ffffff; stroke: #1f2937; stroke-width: 2; rx: 16; ry: 16; }
+      .k { fill: #e0f2fe; stroke: #0284c7; stroke-width: 2; rx: 16; ry: 16; }
+      .w { fill: #fff7ed; stroke: #ea580c; stroke-width: 2; rx: 16; ry: 16; }
+      .g { fill: #ecfdf5; stroke: #059669; stroke-width: 2; rx: 16; ry: 16; }
+    </style>
+  </defs>
+  <text x="24" y="40" class="t">关键研究指标仪表板</text>
+
+  <rect x="40" y="90" width="1320" height="560" class="box"/>
+
+  <rect x="80" y="140" width="250" height="160" class="k"/>
+  <text x="110" y="185" class="h">成本</text>
+  <text x="110" y="225" class="b">原油 / 煤 / 气</text>
+  <text x="110" y="260" class="s">决定边际供给与利润</text>
+
+  <rect x="390" y="140" width="250" height="160" class="g"/>
+  <text x="420" y="185" class="h">开工</text>
+  <text x="420" y="225" class="b">国产装置 / 聚酯负荷</text>
+  <text x="420" y="260" class="s">决定供需传导速度</text>
+
+  <rect x="700" y="140" width="250" height="160" class="w"/>
+  <text x="730" y="185" class="h">进口</text>
+  <text x="730" y="225" class="b">到港 / 船期 / 套利</text>
+  <text x="730" y="260" class="s">决定短期边际压力</text>
+
+  <rect x="1010" y="140" width="250" height="160" class="k"/>
+  <text x="1040" y="185" class="h">库存</text>
+  <text x="1040" y="225" class="b">港口 / 厂内</text>
+  <text x="1040" y="260" class="s">反映供需错配程度</text>
+
+  <rect x="100" y="350" width="1200" height="210" class="box"/>
+  <text x="140" y="395" class="h">研究优先级</text>
+  <text x="140" y="440" class="b">1. 先看库存是否拐头</text>
+  <text x="140" y="475" class="b">2. 再看开工和进口是否同步变化</text>
+  <text x="140" y="510" class="b">3. 最后验证成本是否支撑价格中枢</text>
+  <text x="140" y="545" class="s">展示逻辑：库存是结果变量，成本和开工是过程变量，终端需求是源变量。</text>
+</svg>

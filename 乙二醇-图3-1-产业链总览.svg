@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs>
+    <style>
+      .t { font: 700 28px Arial, sans-serif; fill: #152238; }
+      .h { font: 700 20px Arial, sans-serif; fill: #152238; }
+      .b { font: 18px Arial, sans-serif; fill: #152238; }
+      .s { font: 15px Arial, sans-serif; fill: #5b6575; }
+      .box { fill: #f7f8fb; stroke: #25364a; stroke-width: 2; rx: 14; ry: 14; }
+      .box2 { fill: #eef6ff; stroke: #2b6cb0; stroke-width: 2; rx: 14; ry: 14; }
+      .box3 { fill: #fff7ed; stroke: #c05621; stroke-width: 2; rx: 14; ry: 14; }
+      .a { stroke: #25364a; stroke-width: 3; fill: none; marker-end: url(#m); }
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#25364a"/></marker>
+  </defs>
+  <text x="24" y="40" class="t">乙二醇产业链总览</text>
+
+  <rect x="30" y="90" width="180" height="120" class="box"/>
+  <text x="55" y="135" class="h">上游原料</text>
+  <text x="50" y="168" class="b">原油 / 煤 / 天然气</text>
+  <text x="50" y="194" class="s">成本锚决定边际供给</text>
+
+  <rect x="250" y="90" width="220" height="120" class="box"/>
+  <text x="280" y="135" class="h">生产工艺</text>
+  <text x="268" y="168" class="b">EO水合 / 煤制 / 合成气</text>
+  <text x="275" y="194" class="s">工艺差异决定利润弹性</text>
+
+  <rect x="520" y="90" width="180" height="120" class="box2"/>
+  <text x="565" y="135" class="h">乙二醇</text>
+  <text x="548" y="168" class="b">聚酯链关键中间体</text>
+  <text x="548" y="194" class="s">研究核心变量：库存与开工</text>
+
+  <rect x="750" y="50" width="170" height="100" class="box3"/>
+  <text x="792" y="92" class="h">涤纶长丝</text>
+  <text x="782" y="122" class="s">服装 / 家纺 / 工业丝</text>
+  <rect x="750" y="175" width="170" height="100" class="box3"/>
+  <text x="792" y="217" class="h">涤纶短纤</text>
+  <text x="782" y="247" class="s">填充 / 无纺 / 纺织</text>
+  <rect x="750" y="300" width="170" height="100" class="box3"/>
+  <text x="790" y="342" class="h">PET瓶片</text>
+  <text x="780" y="372" class="s">饮料瓶 / 食品包装</text>
+
+  <rect x="980" y="70" width="340" height="330" class="box"/>
+  <text x="1040" y="125" class="h">终端消费</text>
+  <text x="1010" y="170" class="b">纺服订单</text>
+  <text x="1010" y="210" class="b">出口景气</text>
+  <text x="1010" y="250" class="b">包装需求</text>
+  <text x="1010" y="290" class="b">居民消费</text>
+  <text x="1010" y="330" class="b">季节性补库</text>
+
+  <line x1="210" y1="150" x2="250" y2="150" class="a"/>
+  <line x1="470" y1="150" x2="520" y2="150" class="a"/>
+  <line x1="700" y1="150" x2="750" y2="100" class="a"/>
+  <line x1="700" y1="150" x2="750" y2="225" class="a"/>
+  <line x1="700" y1="150" x2="750" y2="350" class="a"/>
+  <line x1="920" y1="100" x2="980" y2="160" class="a"/>
+  <line x1="920" y1="225" x2="980" y2="250" class="a"/>
+  <line x1="920" y1="350" x2="980" y2="330" class="a"/>
+
+  <text x="30" y="500" class="h">展示结论</text>
+  <rect x="30" y="530" width="400" height="110" class="box"/>
+  <text x="50" y="570" class="b">1. 乙二醇供需高度集中在聚酯链。</text>
+  <text x="50" y="605" class="b">2. 上游看成本，中游看开工，下游看终端。</text>
+  <rect x="470" y="530" width="400" height="110" class="box"/>
+  <text x="490" y="570" class="b">3. 进口到港和库存决定短期波动。</text>
+  <text x="490" y="605" class="b">4. 供需矛盾首先体现在港口与基差。</text>
+</svg>

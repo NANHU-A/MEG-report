@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs>
+    <style>
+      .t { font: 700 28px Arial, sans-serif; fill: #1f2937; }
+      .h { font: 700 20px Arial, sans-serif; fill: #1f2937; }
+      .b { font: 18px Arial, sans-serif; fill: #1f2937; }
+      .s { font: 15px Arial, sans-serif; fill: #4b5563; }
+      .box { fill: #f9fafb; stroke: #374151; stroke-width: 2; rx: 14; ry: 14; }
+      .bar1 { fill: #93c5fd; }
+      .bar2 { fill: #fdba74; }
+      .bar3 { fill: #86efac; }
+    </style>
+  </defs>
+  <text x="24" y="40" class="t">乙二醇工艺成本比较</text>
+  <rect x="40" y="90" width="1320" height="560" class="box"/>
+
+  <text x="80" y="140" class="h">相对成本与利润弹性示意</text>
+  <line x1="140" y1="570" x2="1260" y2="570" stroke="#374151" stroke-width="2"/>
+  <line x1="140" y1="180" x2="140" y2="570" stroke="#374151" stroke-width="2"/>
+  <text x="85" y="185" class="s">高</text>
+  <text x="80" y="560" class="s">低</text>
+
+  <rect x="240" y="240" width="180" height="330" class="bar1"/>
+  <rect x="240" y="540" width="180" height="30" fill="#2563eb"/>
+  <text x="250" y="610" class="b">石脑油/乙烯</text>
+  <text x="240" y="640" class="s">成熟度高，成本跟随油价</text>
+
+  <rect x="580" y="290" width="180" height="280" class="bar2"/>
+  <rect x="580" y="540" width="180" height="30" fill="#ea580c"/>
+  <text x="610" y="610" class="b">煤制路线</text>
+  <text x="560" y="640" class="s">受煤价和装置效率影响更大</text>
+
+  <rect x="920" y="270" width="180" height="300" class="bar3"/>
+  <rect x="920" y="540" width="180" height="30" fill="#16a34a"/>
+  <text x="925" y="610" class="b">气头/合成气</text>
+  <text x="910" y="640" class="s">区域性更强，受气价约束</text>
+
+  <text x="80" y="200" class="s">示意：这里展示的是工艺路线的成本特征，不对应固定绝对值。</text>
+</svg>

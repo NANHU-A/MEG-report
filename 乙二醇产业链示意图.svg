@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs>
+    <style>
+      .box { fill: #f7f8fb; stroke: #2f3b52; stroke-width: 2; rx: 12; ry: 12; }
+      .title { font: 700 26px Arial, sans-serif; fill: #1f2a44; }
+      .text { font: 20px Arial, sans-serif; fill: #1f2a44; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5563; }
+      .arrow { stroke: #2f3b52; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2f3b52"/>
+    </marker>
+  </defs>
+
+  <text x="30" y="42" class="title">乙二醇产业链示意图</text>
+
+  <rect x="40" y="90" width="180" height="92" class="box"/>
+  <text x="70" y="128" class="text">上游原料</text>
+  <text x="60" y="160" class="small">原油 / 煤 / 天然气</text>
+
+  <rect x="270" y="90" width="220" height="92" class="box"/>
+  <text x="310" y="128" class="text">中间生产环节</text>
+  <text x="300" y="160" class="small">EO水合 / 煤制 / 合成气路线</text>
+
+  <rect x="540" y="90" width="190" height="92" class="box"/>
+  <text x="585" y="128" class="text">乙二醇</text>
+  <text x="560" y="160" class="small">聚酯链关键中间体</text>
+
+  <rect x="790" y="70" width="170" height="60" class="box"/>
+  <text x="830" y="107" class="text">涤纶长丝</text>
+  <rect x="790" y="145" width="170" height="60" class="box"/>
+  <text x="830" y="182" class="text">涤纶短纤</text>
+  <rect x="790" y="220" width="170" height="60" class="box"/>
+  <text x="835" y="257" class="text">PET瓶片</text>
+
+  <rect x="1015" y="70" width="150" height="210" class="box"/>
+  <text x="1050" y="110" class="text">终端消费</text>
+  <text x="1035" y="150" class="small">服装</text>
+  <text x="1035" y="185" class="small">家纺</text>
+  <text x="1035" y="220" class="small">包装</text>
+  <text x="1035" y="255" class="small">饮料</text>
+
+  <line x1="220" y1="136" x2="270" y2="136" class="arrow"/>
+  <line x1="490" y1="136" x2="540" y2="136" class="arrow"/>
+  <line x1="730" y1="136" x2="790" y2="100" class="arrow"/>
+  <line x1="730" y1="136" x2="790" y2="175" class="arrow"/>
+  <line x1="730" y1="136" x2="790" y2="250" class="arrow"/>
+  <line x1="960" y1="100" x2="1015" y2="120" class="arrow"/>
+  <line x1="960" y1="175" x2="1015" y2="190" class="arrow"/>
+  <line x1="960" y1="250" x2="1015" y2="250" class="arrow"/>
+
+  <text x="40" y="345" class="small">注：乙二醇价格研究应同时关注成本、开工、进口到港和聚酯负荷。</text>
+</svg>

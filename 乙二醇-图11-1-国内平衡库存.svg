@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs><style>.t{font:700 28px Arial;fill:#111827}.h{font:700 20px Arial;fill:#111827}.b{font:18px Arial;fill:#111827}.s{font:15px Arial;fill:#6b7280}.box{fill:#fff;stroke:#374151;stroke-width:2;rx:14;ry:14}.x{fill:#fee2e2}.y{fill:#fef3c7}.z{fill:#dcfce7}</style></defs>
+  <text x="24" y="40" class="t">国内平衡与库存变化</text><rect x="40" y="90" width="1320" height="560" class="box"/>
+  <rect x="120" y="180" width="260" height="170" class="x"/><text x="185" y="225" class="h">累库</text><text x="155" y="265" class="b">供给>需求</text><text x="135" y="305" class="s">价格承压</text>
+  <rect x="470" y="180" width="260" height="170" class="y"/><text x="535" y="225" class="h">横盘</text><text x="505" y="265" class="b">供需僵持</text><text x="495" y="305" class="s">等待催化</text>
+  <rect x="820" y="180" width="260" height="170" class="z"/><text x="885" y="225" class="h">去库</text><text x="850" y="265" class="b">需求>供给</text><text x="835" y="305" class="s">价格支撑</text>
+  <text x="120" y="500" class="b">库存是国内平衡最直观的结果变量，最适合放在展示页中作为判断中枢。</text>
+</svg>

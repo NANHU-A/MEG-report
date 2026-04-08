@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380">
+  <defs>
+    <style>
+      .box { fill: #fff7ed; stroke: #9a3412; stroke-width: 2; rx: 12; ry: 12; }
+      .title { font: 700 26px Arial, sans-serif; fill: #7c2d12; }
+      .text { font: 20px Arial, sans-serif; fill: #7c2d12; }
+      .small { font: 16px Arial, sans-serif; fill: #9a3412; }
+      .arrow { stroke: #9a3412; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9a3412"/>
+    </marker>
+  </defs>
+
+  <text x="30" y="42" class="title">乙二醇价格传导逻辑图</text>
+
+  <rect x="40" y="100" width="160" height="80" class="box"/>
+  <text x="78" y="147" class="text">原料变化</text>
+
+  <rect x="240" y="100" width="160" height="80" class="box"/>
+  <text x="275" y="147" class="text">生产利润</text>
+
+  <rect x="440" y="100" width="160" height="80" class="box"/>
+  <text x="470" y="147" class="text">装置开工</text>
+
+  <rect x="640" y="100" width="160" height="80" class="box"/>
+  <text x="675" y="147" class="text">进口到港</text>
+
+  <rect x="840" y="100" width="160" height="80" class="box"/>
+  <text x="875" y="147" class="text">港口库存</text>
+
+  <rect x="1040" y="100" width="120" height="80" class="box"/>
+  <text x="1058" y="147" class="text">现货价</text>
+
+  <line x1="200" y1="140" x2="240" y2="140" class="arrow"/>
+  <line x1="400" y1="140" x2="440" y2="140" class="arrow"/>
+  <line x1="600" y1="140" x2="640" y2="140" class="arrow"/>
+  <line x1="800" y1="140" x2="840" y2="140" class="arrow"/>
+  <line x1="1000" y1="140" x2="1040" y2="140" class="arrow"/>
+
+  <rect x="150" y="250" width="900" height="80" class="box"/>
+  <text x="210" y="298" class="text">聚酯开工 / 终端订单 / 去库补库预期</text>
+  <text x="650" y="298" class="small">决定需求强弱和价格持续性</text>
+</svg>

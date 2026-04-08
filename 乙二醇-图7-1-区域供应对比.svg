@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs><style>.t{font:700 28px Arial;fill:#111827}.h{font:700 20px Arial;fill:#111827}.b{font:18px Arial;fill:#111827}.s{font:15px Arial;fill:#6b7280}.box{fill:#f9fafb;stroke:#374151;stroke-width:2;rx:14;ry:14}.m{fill:#bfdbfe}.o{fill:#fdba74}.g{fill:#86efac}.r{fill:#fecaca}</style></defs>
+  <text x="24" y="40" class="t">主要区域供应特征对比</text>
+  <rect x="40" y="90" width="1320" height="560" class="box"/>
+  <rect x="100" y="170" width="260" height="220" class="m"/><text x="170" y="220" class="h">中东</text><text x="145" y="260" class="b">低成本</text><text x="120" y="300" class="s">出口导向强</text><text x="110" y="335" class="s">边际影响大</text>
+  <rect x="430" y="170" width="260" height="220" class="o"/><text x="500" y="220" class="h">北美</text><text x="475" y="260" class="b">配套完善</text><text x="455" y="300" class="s">远洋供给活跃</text><text x="455" y="335" class="s">受套利窗口驱动</text>
+  <rect x="760" y="170" width="260" height="220" class="g"/><text x="835" y="220" class="h">亚洲</text><text x="805" y="260" class="b">消费中心</text><text x="785" y="300" class="s">进口与生产并存</text><text x="785" y="335" class="s">决定现货定价</text>
+  <rect x="1090" y="170" width="220" height="220" class="r"/><text x="1145" y="220" class="h">其他</text><text x="1112" y="260" class="b">边际供给</text><text x="1105" y="300" class="s">更多体现扰动</text><text x="1105" y="335" class="s">而非主导</text>
+  <text x="110" y="500" class="h">结论</text><text x="110" y="540" class="b">中东看出口，北美看流向，亚洲看库存。</text>
+</svg>

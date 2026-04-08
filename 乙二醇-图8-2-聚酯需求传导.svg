@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs><style>.t{font:700 28px Arial;fill:#0f172a}.h{font:700 20px Arial;fill:#0f172a}.b{font:18px Arial;fill:#0f172a}.s{font:15px Arial;fill:#64748b}.box{fill:#fff;stroke:#334155;stroke-width:2;rx:14;ry:14}.g{fill:#ecfdf5}.y{fill:#fff7ed}.a{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#m)}</style><marker id="m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0,10 4,0 8" fill="#334155"/></marker></defs>
+  <text x="24" y="40" class="t">聚酯需求传导路径</text><rect x="40" y="90" width="1320" height="560" class="box"/>
+  <rect x="80" y="180" width="210" height="110" class="g"/><text x="130" y="225" class="h">终端订单</text><text x="110" y="260" class="s">纺服/包装</text>
+  <rect x="340" y="180" width="210" height="110" class="y"/><text x="390" y="225" class="h">聚酯开工</text><text x="370" y="260" class="s">先行响应</text>
+  <rect x="600" y="180" width="210" height="110" class="g"/><text x="645" y="225" class="h">采购补库</text><text x="630" y="260" class="s">原料需求上升</text>
+  <rect x="860" y="180" width="210" height="110" class="y"/><text x="905" y="225" class="h">乙二醇去库</text><text x="885" y="260" class="s">价格得到支撑</text>
+  <line x1="290" y1="235" x2="340" y2="235" class="a"/><line x1="550" y1="235" x2="600" y2="235" class="a"/><line x1="810" y1="235" x2="860" y2="235" class="a"/>
+  <rect x="120" y="390" width="1160" height="120" class="box"/><text x="150" y="438" class="b">乙二醇需求并不是独立变量，而是聚酯链对终端消费的再映射。</text><text x="150" y="472" class="s">展示口径：需求改善应先在聚酯看到，再在乙二醇库存上得到验证。</text>
+</svg>

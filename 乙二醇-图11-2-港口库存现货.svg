@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs><style>.t{font:700 28px Arial;fill:#1f2937}.h{font:700 20px Arial;fill:#1f2937}.b{font:18px Arial;fill:#1f2937}.s{font:15px Arial;fill:#6b7280}.box{fill:#fff;stroke:#374151;stroke-width:2;rx:14;ry:14}.a{fill:#dbeafe}.y{fill:#fef3c7}.r{fill:#fee2e2}</style></defs>
+  <text x="24" y="40" class="t">港口库存与现货关系</text><rect x="40" y="90" width="1320" height="560" class="box"/>
+  <rect x="110" y="170" width="320" height="160" class="a"/><text x="180" y="225" class="h">库存下降</text><text x="160" y="265" class="b">现货偏强</text><text x="150" y="305" class="s">基差走强</text>
+  <rect x="540" y="170" width="320" height="160" class="y"/><text x="620" y="225" class="h">库存持平</text><text x="600" y="265" class="b">现货震荡</text><text x="585" y="305" class="s">交易预期</text>
+  <rect x="970" y="170" width="320" height="160" class="r"/><text x="1040" y="225" class="h">库存上升</text><text x="1020" y="265" class="b">现货承压</text><text x="1005" y="305" class="s">基差走弱</text>
+  <text x="120" y="500" class="b">港口库存是最敏感的现货观察点，通常领先盘面情绪变化。</text>
+</svg>

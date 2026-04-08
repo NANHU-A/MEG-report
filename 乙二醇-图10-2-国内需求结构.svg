@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs><style>.t{font:700 28px Arial;fill:#111827}.h{font:700 20px Arial;fill:#111827}.b{font:18px Arial;fill:#111827}.s{font:15px Arial;fill:#6b7280}.box{fill:#fff;stroke:#374151;stroke-width:2;rx:14;ry:14}.a{fill:#dbeafe}.b1{fill:#bfdbfe}.c{fill:#93c5fd}</style></defs>
+  <text x="24" y="40" class="t">国内需求结构</text><rect x="40" y="90" width="1320" height="560" class="box"/>
+  <rect x="110" y="180" width="320" height="160" class="a"/><text x="195" y="225" class="h">涤纶长丝</text><text x="170" y="265" class="s">核心消费去向</text>
+  <rect x="540" y="180" width="320" height="160" class="b1"/><text x="625" y="225" class="h">涤纶短纤</text><text x="600" y="265" class="s">替代与功能消费</text>
+  <rect x="970" y="180" width="320" height="160" class="c"/><text x="1050" y="225" class="h">PET瓶片</text><text x="1020" y="265" class="s">包装与饮料消费</text>
+  <text x="130" y="500" class="b">国内需求基本由聚酯链条决定，季节性补库影响短期波动。</text>
+</svg>

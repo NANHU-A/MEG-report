@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs><style>.t{font:700 28px Arial;fill:#111827}.h{font:700 20px Arial;fill:#111827}.b{font:18px Arial;fill:#111827}.s{font:15px Arial;fill:#6b7280}.box{fill:#fff;stroke:#374151;stroke-width:2;rx:14;ry:14}.x{fill:#eff6ff}.y{fill:#fef3c7}.z{fill:#ecfdf5}</style></defs>
+  <text x="24" y="40" class="t">乙二醇期货应用场景</text><rect x="40" y="90" width="1320" height="560" class="box"/>
+  <rect x="120" y="170" width="280" height="180" class="x"/><text x="195" y="220" class="h">套保</text><text x="150" y="260" class="s">锁定采购/销售</text>
+  <rect x="430" y="170" width="280" height="180" class="y"/><text x="505" y="220" class="h">套利</text><text x="470" y="260" class="s">基差/月差/跨品种</text>
+  <rect x="740" y="170" width="280" height="180" class="z"/><text x="815" y="220" class="h">投研</text><text x="780" y="260" class="s">观察预期与结构</text>
+  <rect x="1050" y="170" width="240" height="180" class="x"/><text x="1115" y="220" class="h">交易</text><text x="1075" y="260" class="s">流动性与波动</text>
+  <text x="120" y="500" class="b">期货的价值在于管理价格风险，而不是简单预测价格。</text>
+</svg>

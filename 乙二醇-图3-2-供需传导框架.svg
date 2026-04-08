@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs>
+    <style>
+      .t { font: 700 28px Arial, sans-serif; fill: #0f172a; }
+      .h { font: 700 20px Arial, sans-serif; fill: #0f172a; }
+      .b { font: 18px Arial, sans-serif; fill: #0f172a; }
+      .s { font: 15px Arial, sans-serif; fill: #64748b; }
+      .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 14; ry: 14; }
+      .hot { fill: #fff1f2; stroke: #be123c; stroke-width: 2; rx: 14; ry: 14; }
+      .cold { fill: #eff6ff; stroke: #2563eb; stroke-width: 2; rx: 14; ry: 14; }
+      .a { stroke: #334155; stroke-width: 3; fill: none; marker-end: url(#m); }
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#334155"/></marker>
+  </defs>
+  <text x="24" y="40" class="t">乙二醇供需传导框架</text>
+
+  <rect x="40" y="120" width="220" height="120" class="hot"/>
+  <text x="82" y="165" class="h">原料变化</text>
+  <text x="60" y="200" class="s">原油 / 煤 / 天然气</text>
+
+  <rect x="300" y="120" width="220" height="120" class="box"/>
+  <text x="345" y="165" class="h">生产利润</text>
+  <text x="330" y="200" class="s">决定开工意愿</text>
+
+  <rect x="560" y="120" width="220" height="120" class="cold"/>
+  <text x="600" y="165" class="h">装置开工</text>
+  <text x="588" y="200" class="s">国产 + 海外供给</text>
+
+  <rect x="820" y="120" width="220" height="120" class="box"/>
+  <text x="860" y="165" class="h">进口到港</text>
+  <text x="850" y="200" class="s">船期 / 套利窗口</text>
+
+  <rect x="1080" y="120" width="220" height="120" class="hot"/>
+  <text x="1110" y="165" class="h">港口库存</text>
+  <text x="1100" y="200" class="s">现货压力中枢</text>
+
+  <line x1="260" y1="180" x2="300" y2="180" class="a"/>
+  <line x1="520" y1="180" x2="560" y2="180" class="a"/>
+  <line x1="780" y1="180" x2="820" y2="180" class="a"/>
+  <line x1="1040" y1="180" x2="1080" y2="180" class="a"/>
+
+  <rect x="160" y="330" width="1080" height="140" class="box"/>
+  <text x="190" y="370" class="h">需求侧：聚酯开工 / 终端订单 / 纺服景气 / 包装消费</text>
+  <text x="190" y="410" class="b">需求改善时，聚酯先补库；需求走弱时，聚酯先降负荷，乙二醇库存随后抬升。</text>
+  <text x="190" y="445" class="s">展示口径：乙二醇的“供需平衡”本质上是库存变化与价差变化的同步表达。</text>
+
+  <rect x="160" y="520" width="520" height="120" class="cold"/>
+  <text x="190" y="565" class="h">短期强势</text>
+  <text x="190" y="600" class="b">低库存 + 到港偏少 + 聚酯开工抬升</text>
+  <rect x="720" y="520" width="520" height="120" class="hot"/>
+  <text x="750" y="565" class="h">短期承压</text>
+  <text x="750" y="600" class="b">高库存 + 到港偏多 + 聚酯开工回落</text>
+</svg>

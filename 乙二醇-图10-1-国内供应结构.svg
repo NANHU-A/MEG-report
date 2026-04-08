@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs><style>.t{font:700 28px Arial;fill:#0f172a}.h{font:700 20px Arial;fill:#0f172a}.b{font:18px Arial;fill:#0f172a}.s{font:15px Arial;fill:#64748b}.box{fill:#fff;stroke:#334155;stroke-width:2;rx:14;ry:14}.a{fill:#dbeafe}.b1{fill:#bfdbfe}.c{fill:#93c5fd}.d{fill:#60a5fa}</style></defs>
+  <text x="24" y="40" class="t">国内供应结构</text><rect x="40" y="90" width="1320" height="560" class="box"/>
+  <circle cx="340" cy="320" r="125" class="a"/><text x="295" y="315" class="h">国产供给</text><text x="250" y="350" class="s">装置开工 / 检修</text>
+  <circle cx="700" cy="320" r="125" class="b1"/><text x="660" y="315" class="h">进口供给</text><text x="618" y="350" class="s">到港 / 船期</text>
+  <circle cx="1060" cy="320" r="125" class="c"/><text x="1012" y="315" class="h">边际库存</text><text x="975" y="350" class="s">港口库存为主</text>
+  <text x="130" y="540" class="b">国内供给的研究重点是“实际开工+进口到港+港口库存”。</text>
+</svg>

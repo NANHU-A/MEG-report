@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs>
+    <style>
+      .t { font: 700 28px Arial, sans-serif; fill: #1f2937; }
+      .h { font: 700 20px Arial, sans-serif; fill: #1f2937; }
+      .b { font: 18px Arial, sans-serif; fill: #1f2937; }
+      .s { font: 15px Arial, sans-serif; fill: #6b7280; }
+      .box { fill: #f9fafb; stroke: #374151; stroke-width: 2; rx: 14; ry: 14; }
+      .m { fill: #bfdbfe; }
+      .o { fill: #fdba74; }
+      .g { fill: #86efac; }
+    </style>
+  </defs>
+  <text x="24" y="40" class="t">全球供应结构示意</text>
+  <rect x="40" y="90" width="1320" height="560" class="box"/>
+
+  <rect x="110" y="180" width="260" height="180" class="m"/>
+  <text x="155" y="230" class="h">中东</text>
+  <text x="145" y="270" class="b">出口型产区</text>
+  <text x="135" y="305" class="s">成本优势 + 港口优势</text>
+
+  <rect x="470" y="180" width="260" height="180" class="o"/>
+  <text x="545" y="230" class="h">北美</text>
+  <text x="535" y="270" class="b">远洋供给</text>
+  <text x="505" y="305" class="s">配套完善 + 跨区流动</text>
+
+  <rect x="830" y="180" width="260" height="180" class="g"/>
+  <text x="905" y="230" class="h">亚洲</text>
+  <text x="875" y="270" class="b">生产 + 消费 + 进口</text>
+  <text x="868" y="305" class="s">决定现货定价与库存波动</text>
+
+  <text x="120" y="450" class="h">供应研究关注点</text>
+  <text x="120" y="490" class="b">1. 谁在出口</text>
+  <text x="120" y="525" class="b">2. 谁在消化</text>
+  <text x="120" y="560" class="b">3. 谁在补库</text>
+  <text x="500" y="490" class="s">中东影响边际出口，北美影响远洋流向，亚洲影响本地价格。</text>
+</svg>

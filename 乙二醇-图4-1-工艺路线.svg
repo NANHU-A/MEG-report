@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs>
+    <style>
+      .t { font: 700 28px Arial, sans-serif; fill: #172554; }
+      .h { font: 700 20px Arial, sans-serif; fill: #172554; }
+      .b { font: 18px Arial, sans-serif; fill: #172554; }
+      .s { font: 15px Arial, sans-serif; fill: #475569; }
+      .box { fill: #eff6ff; stroke: #1d4ed8; stroke-width: 2; rx: 14; ry: 14; }
+      .box2 { fill: #fffbeb; stroke: #d97706; stroke-width: 2; rx: 14; ry: 14; }
+      .box3 { fill: #f0fdf4; stroke: #16a34a; stroke-width: 2; rx: 14; ry: 14; }
+      .a { stroke: #334155; stroke-width: 3; fill: none; marker-end: url(#m); }
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#334155"/></marker>
+  </defs>
+  <text x="24" y="40" class="t">乙二醇主要工艺路线</text>
+
+  <rect x="40" y="120" width="350" height="170" class="box"/>
+  <text x="80" y="165" class="h">石脑油/乙烯路线</text>
+  <text x="70" y="205" class="b">原油 → 石脑油 → 乙烯 → EO → EG</text>
+  <text x="70" y="245" class="s">优点：成熟、规模化、配套完善</text>
+  <text x="70" y="270" class="s">关注：原油价格与炼化利润</text>
+
+  <rect x="525" y="120" width="350" height="170" class="box2"/>
+  <text x="565" y="165" class="h">煤制乙二醇路线</text>
+  <text x="555" y="205" class="b">煤炭 → 合成气 → 中间体 → EG</text>
+  <text x="555" y="245" class="s">优点：资源本地化、配套灵活</text>
+  <text x="555" y="270" class="s">关注：煤价、能耗、环保约束</text>
+
+  <rect x="1010" y="120" width="350" height="170" class="box3"/>
+  <text x="1050" y="165" class="h">气头/合成气路线</text>
+  <text x="1040" y="205" class="b">天然气 → 合成气 → 中间体 → EG</text>
+  <text x="1040" y="245" class="s">优点：资源匹配时成本稳定</text>
+  <text x="1040" y="270" class="s">关注：气价与区域供给条件</text>
+
+  <line x1="390" y1="205" x2="525" y2="205" class="a"/>
+  <line x1="875" y1="205" x2="1010" y2="205" class="a"/>
+
+  <rect x="80" y="370" width="1240" height="230" class="box"/>
+  <text x="110" y="415" class="h">研报解读</text>
+  <text x="110" y="460" class="b">1. 不同工艺的利润中枢不同，决定了边际装置的供给弹性。</text>
+  <text x="110" y="500" class="b">2. 成本上行时，先压缩利润，再影响开工，最后表现为库存拐点。</text>
+  <text x="110" y="540" class="b">3. 乙二醇不是单一工艺定价，而是多工艺共同塑造行业边际成本。</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs>
+    <style>
+      .t { font: 700 28px Arial, sans-serif; fill: #1e293b; }
+      .h { font: 700 20px Arial, sans-serif; fill: #1e293b; }
+      .b { font: 18px Arial, sans-serif; fill: #1e293b; }
+      .s { font: 15px Arial, sans-serif; fill: #64748b; }
+      .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 14; ry: 14; }
+      .a { fill: #dbeafe; }
+      .b1 { fill: #bfdbfe; }
+      .c { fill: #93c5fd; }
+    </style>
+  </defs>
+  <text x="24" y="40" class="t">全球需求结构示意</text>
+  <rect x="40" y="90" width="1320" height="560" class="box"/>
+
+  <circle cx="330" cy="340" r="120" class="a"/>
+  <text x="280" y="335" class="h">涤纶长丝</text>
+  <text x="250" y="370" class="s">服装 / 家纺 / 工业丝</text>
+
+  <circle cx="670" cy="340" r="120" class="b1"/>
+  <text x="620" y="335" class="h">涤纶短纤</text>
+  <text x="595" y="370" class="s">填充 / 无纺 / 纺织</text>
+
+  <circle cx="1010" cy="340" r="120" class="c"/>
+  <text x="960" y="335" class="h">PET瓶片</text>
+  <text x="945" y="370" class="s">包装 / 饮料 / 日化</text>
+
+  <text x="120" y="500" class="h">需求结论</text>
+  <text x="120" y="540" class="b">乙二醇需求主要由聚酯链条代为实现。</text>
+  <text x="120" y="575" class="b">终端消费改善先影响聚酯，再影响乙二醇。</text>
+</svg>
