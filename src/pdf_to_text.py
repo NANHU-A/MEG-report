@@ -30,8 +30,5 @@ def pdf_to_markdown(pdf_path: str, output_md: str = None):
     print(f"✅ 转换完成 → {output_md}")
 
 # 使用示例（把路径改成你实际的 PDF 文件路径）
-pdf_to_markdown("6杭州中柏资产管理有限公司介绍2.pdf")
-pdf_to_markdown("期货基础知识及风控制度202508.pdf")
-pdf_to_markdown("品种框架报告模板.pdf")
-pdf_to_markdown("韩梦琪-天然橡胶 .pdf")
-pdf_to_markdown("MEG_report.pdf")
+pdf_to_markdown("MEG_report(3).pdf")
+
