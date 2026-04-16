@@ -30,5 +30,5 @@ def pdf_to_markdown(pdf_path: str, output_md: str = None):
     print(f"✅ 转换完成 → {output_md}")
 
 # 使用示例（把路径改成你实际的 PDF 文件路径）
-pdf_to_markdown("MEG_report(3).pdf")
+pdf_to_markdown("D:\\中柏MEG\\results\\overleaf\\MEG_report(3.1).pdf")
 
