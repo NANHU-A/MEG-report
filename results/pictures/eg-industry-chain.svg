@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1080" viewBox="0 0 1800 1080">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0,0 10,4 0,8" fill="#2f2f2f"/>
+    </marker>
+  </defs>
+
+  <style>
+    .bg { fill:#eeeeee; }
+    .title { font-family:"Microsoft YaHei",sans-serif; font-size:56px; font-weight:700; fill:#3f3f3f; }
+    .secUp { font-family:"Microsoft YaHei",sans-serif; font-size:50px; fill:#b2601d; }
+    .secMid { font-family:"Microsoft YaHei",sans-serif; font-size:50px; fill:#9b7617; }
+    .secDown { font-family:"Microsoft YaHei",sans-serif; font-size:50px; fill:#2f6c35; }
+    .sub { font-family:"Microsoft YaHei",sans-serif; font-size:34px; fill:#1f1f1f; }
+    .txt { font-family:"Microsoft YaHei",sans-serif; font-size:30px; fill:#1f1f1f; }
+    .txts { font-family:"Microsoft YaHei",sans-serif; font-size:26px; fill:#1f1f1f; }
+    .mini { font-family:"Microsoft YaHei",sans-serif; font-size:22px; fill:#1f1f1f; }
+    .pct { font-family:"Times New Roman",serif; font-size:42px; fill:#111; }
+    .note { font-family:"Microsoft YaHei",sans-serif; font-size:24px; fill:#2c2c2c; }
+
+    .up { fill:#efc39f; stroke:#b98660; stroke-width:3; }
+    .mid { fill:#f3e9c5; stroke:#ad9957; stroke-width:3; }
+    .down { fill:#c7e2b8; stroke:#789e6a; stroke-width:3; }
+    .frame { fill:none; stroke:#355b90; stroke-width:4; }
+    .line { stroke:#2f2f2f; stroke-width:3; fill:none; marker-end:url(#arr); }
+    .line2 { stroke:#2f2f2f; stroke-width:2.5; fill:none; marker-end:url(#arr); }
+  </style>
+
+  <rect x="0" y="0" width="1800" height="1080" class="bg"/>
+  <ellipse cx="900" cy="540" rx="560" ry="210" fill="#cfd4da" opacity="0.30"/>
+
+  <text x="42" y="92" class="title">1. 产业链</text>
+  <line x1="0" y1="138" x2="1800" y2="138" stroke="#3d3d3d" stroke-width="5"/>
+  <line x1="0" y1="138" x2="190" y2="138" stroke="#ca1f24" stroke-width="7"/>
+  <text x="1620" y="92" class="title" font-size="34">CIEC</text>
+
+  <text x="300" y="208" class="secUp">上游</text>
+  <text x="445" y="208" class="sub">（油气煤+生物基）</text>
+  <text x="845" y="208" class="secMid">中游</text>
+  <text x="990" y="208" class="sub">（EO路线+煤制路线）</text>
+  <text x="1365" y="208" class="secDown">下游</text>
+  <text x="1510" y="208" class="sub">（聚酯链主导）</text>
+
+  <!-- upstream left column -->
+  <rect x="80" y="290" width="130" height="84" class="up"/>
+  <text x="114" y="343" class="txt">原油</text>
+  <rect x="80" y="410" width="130" height="84" class="up"/>
+  <text x="98" y="463" class="txt">天然气</text>
+  <rect x="80" y="530" width="130" height="84" class="up"/>
+  <text x="114" y="583" class="txt">煤炭</text>
+
+  <!-- upstream right column -->
+  <rect x="270" y="290" width="220" height="84" class="up"/>
+  <text x="316" y="343" class="txt">石脑油裂解</text>
+  <rect x="270" y="410" width="220" height="84" class="up"/>
+  <text x="330" y="463" class="txt">乙烷裂解</text>
+  <rect x="270" y="530" width="220" height="84" class="up"/>
+  <text x="345" y="583" class="txt">煤气化</text>
+  <text x="272" y="664" class="txts">补充：生物乙醇/生物EO平台</text>
+
+  <!-- mid frames -->
+  <rect x="560" y="250" width="760" height="330" class="frame"/>
+  <rect x="560" y="610" width="760" height="210" class="frame"/>
+
+  <!-- route A boxes -->
+  <rect x="630" y="320" width="170" height="84" class="mid"/>
+  <text x="688" y="373" class="txt">乙烯</text>
+  <rect x="860" y="320" width="210" height="84" class="mid"/>
+  <text x="910" y="373" class="txt">环氧乙烷</text>
+  <rect x="1130" y="320" width="140" height="84" class="mid"/>
+  <text x="1160" y="373" class="txt">MEG</text>
+
+  <rect x="980" y="450" width="130" height="72" class="mid"/>
+  <text x="1015" y="496" class="txts">TEG</text>
+  <rect x="1140" y="450" width="130" height="72" class="mid"/>
+  <text x="1175" y="496" class="txts">DEG</text>
+
+  <text x="580" y="606" class="txts" fill="#2e5184">路线A：乙烯氧化法（EO水合制MEG）</text>
+
+  <!-- route B boxes -->
+  <rect x="640" y="670" width="140" height="76" class="mid"/>
+  <text x="670" y="718" class="txts">合成气</text>
+  <rect x="840" y="670" width="120" height="76" class="mid"/>
+  <text x="875" y="718" class="txts">甲醇</text>
+  <rect x="1020" y="670" width="130" height="76" class="mid"/>
+  <text x="1055" y="718" class="txts">DMO</text>
+  <rect x="1210" y="670" width="120" height="76" class="mid"/>
+  <text x="1240" y="718" class="txts">MEG</text>
+
+  <text x="580" y="850" class="txts" fill="#2e5184">路线B：煤制乙二醇（煤→合成气→甲醇/DMO→EG）</text>
+
+  <!-- downstream -->
+  <rect x="1410" y="270" width="260" height="84" class="down"/>
+  <text x="1468" y="323" class="txt">聚酯纤维/PET</text>
+  <rect x="1410" y="380" width="260" height="76" class="down"/>
+  <text x="1472" y="428" class="txts">防冻液/冷却液</text>
+  <rect x="1410" y="490" width="260" height="76" class="down"/>
+  <text x="1480" y="538" class="txts">不饱和树脂</text>
+  <rect x="1410" y="600" width="260" height="76" class="down"/>
+  <text x="1480" y="648" class="txts">乙二醇醚/溶剂</text>
+
+  <text x="1330" y="325" class="pct">78%</text>
+  <text x="1330" y="425" class="pct">12%</text>
+  <text x="1330" y="535" class="pct">6%</text>
+  <text x="1330" y="645" class="pct">4%</text>
+
+  <!-- right-side export/domestic/accessory branches -->
+  <rect x="1688" y="242" width="82" height="46" class="down"/>
+  <text x="1713" y="271" class="mini">出口</text>
+  <rect x="1688" y="300" width="82" height="46" class="down"/>
+  <text x="1713" y="329" class="mini">内销</text>
+  <rect x="1688" y="358" width="82" height="46" class="down"/>
+  <text x="1713" y="387" class="mini">配套</text>
+
+  <rect x="1688" y="532" width="82" height="46" class="down"/>
+  <text x="1713" y="561" class="mini">出口</text>
+  <rect x="1688" y="590" width="82" height="46" class="down"/>
+  <text x="1713" y="619" class="mini">内销</text>
+  <rect x="1688" y="648" width="82" height="46" class="down"/>
+  <text x="1713" y="677" class="mini">配套</text>
+
+  <!-- connectors upstream -->
+  <path d="M210 332 L270 332" class="line2"/>
+  <path d="M210 452 L270 452" class="line2"/>
+  <path d="M210 572 L270 572" class="line2"/>
+
+  <path d="M490 332 L630 362" class="line"/>
+  <path d="M490 452 L630 362" class="line"/>
+  <path d="M490 572 L640 708" class="line"/>
+
+  <!-- connectors route A -->
+  <path d="M800 362 L860 362" class="line"/>
+  <path d="M1070 362 L1130 362" class="line"/>
+  <path d="M1200 404 L1200 450" class="line2"/>
+  <path d="M1160 404 L1045 450" class="line2"/>
+
+  <!-- connectors route B -->
+  <path d="M780 708 L840 708" class="line"/>
+  <path d="M960 708 L1020 708" class="line"/>
+  <path d="M1150 708 L1210 708" class="line"/>
+
+  <!-- to downstream -->
+  <path d="M1270 362 L1410 312" class="line"/>
+  <path d="M1205 486 L1410 418" class="line2"/>
+  <path d="M1070 486 L1410 528" class="line2"/>
+  <path d="M1270 708 L1410 638" class="line"/>
+
+  <!-- downstream to branch -->
+  <path d="M1670 312 L1688 265" class="line2"/>
+  <path d="M1670 312 L1688 323" class="line2"/>
+  <path d="M1670 312 L1688 381" class="line2"/>
+  <path d="M1670 638 L1688 555" class="line2"/>
+  <path d="M1670 638 L1688 613" class="line2"/>
+  <path d="M1670 638 L1688 671" class="line2"/>
+
+  <!-- bottom notes -->
+  <text x="76" y="918" class="note">产业链补充：上游成本受油气煤价格与开工率影响；中游并行 EO 路线与煤制路线；下游需求核心来自聚酯瓶片与纤维。</text>
+  <text x="76" y="958" class="note">结构占比（示意）：聚酯链 78%，防冻液 12%，树脂 6%，乙二醇醚/溶剂 4%。</text>
+  <text x="76" y="998" class="note">数据来源：公开行业资料整理（示意图，2025-2026）。</text>
+</svg>
