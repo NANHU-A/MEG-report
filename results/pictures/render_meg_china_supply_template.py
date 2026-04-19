@@ -36,14 +36,10 @@ def add_world_like_bg(ax):
 
 
 def main():
-    years = np.arange(2014, 2026)
-    # 中国MEG供给（估算口径，万吨）
-    imports = np.array(
-        [860, 910, 980, 1080, 1150, 1210, 1240, 1280, 1330, 1380, 1425, 1470]
-    )
-    domestic = np.array(
-        [430, 500, 590, 720, 860, 980, 1120, 1280, 1470, 1650, 1810, 1960]
-    )
+    years = np.arange(2021, 2026)
+    # 中国MEG供给（估算口径，万吨），与参考图趋势大致对齐
+    domestic = np.array([1230, 1360, 1680, 1930, 2080])
+    imports = np.array([840, 760, 730, 670, 790])
     total_supply = imports + domestic
     import_ratio = imports / total_supply * 100
 
@@ -128,15 +124,15 @@ def main():
 
     ax.set_title("中国MEG总供给（万吨）", fontsize=24, pad=14)
     ax.set_xlim(-0.5, len(years) - 0.5)
-    ax.set_ylim(0, 3600)
+    ax.set_ylim(0, 3200)
     ax.set_xticks(x)
     ax.set_xticklabels(years, rotation=90, fontsize=10)
-    ax.set_yticks([0, 600, 1200, 1800, 2400, 3000, 3600])
+    ax.set_yticks([0, 800, 1600, 2400, 3200])
     ax.tick_params(axis="y", labelsize=11)
     ax.grid(axis="y", color="#d0d0d0", lw=1.0, alpha=0.8)
 
-    ax2.set_ylim(50, 100)
-    ax2.set_yticks([50, 60, 70, 80, 90, 100])
+    ax2.set_ylim(0, 100)
+    ax2.set_yticks([0, 20, 40, 60, 80, 100])
     ax2.tick_params(axis="y", labelsize=11)
 
     for sp in ["top", "right", "left", "bottom"]:
@@ -197,7 +193,7 @@ def main():
     fig.text(
         0.17,
         0.105,
-        "-  近年来我国MEG进口依存度自高位回落，2025年约42.9%",
+        "-  2021-2024年进口依存度明显下行，2025年随需求恢复小幅回升至约27.5%",
         fontsize=18,
         color="#111",
     )
@@ -212,7 +208,7 @@ def main():
     fig.text(
         0.50,
         0.006,
-        "数据来源：公开行业资料整理（2014-2025，估算口径）",
+        "数据来源：公开行业资料整理（2021-2025，估算口径）",
         ha="center",
         fontsize=14,
         color="#222",
