@@ -35,7 +35,7 @@ def main():
 
     # Title and annotations
     fig.text(0.05, 0.90, "全球EG供应端边际成本曲线", fontsize=28, fontweight="bold", color="#111111")
-    fig.text(0.57, 0.91, "边际成本动态移动：乙烯、煤、电价格波动会改变梯队位置", fontsize=14.5, color="#c00000")
+    fig.text(0.56, 0.915, "边际成本动态移动：油价、煤价、电价及一体化程度变化，\n会推动产能在“保留—降负—转产—退出”之间切换。", fontsize=13.6, color="#c00000", ha="left", va="center")
     fig.text(0.73, 0.84, "80%分位\n边际成本", fontsize=14, ha="center", color="#111111")
     fig.text(0.85, 0.84, "90%分位\n边际成本", fontsize=14, ha="center", color="#111111")
 
@@ -66,12 +66,6 @@ def main():
     ax.set_xticks([0, total * 0.25, total * 0.5, total * 0.75, total])
     ax.set_xticklabels(["0", "0.5", "1.5", "2.5", "4"], fontsize=11)
 
-    # right side note box
-    note = FancyBboxPatch((total * 0.64, 66), total * 0.32, 15, boxstyle="round,pad=0.012,rounding_size=0.012", facecolor="#f6f6f6", edgecolor="#777", linewidth=1.0)
-    ax.add_patch(note)
-    ax.text(total * 0.65, 78, "中国煤制是全球重要\n但偏高成本的边际供给", fontsize=12.5, color="#c00000")
-    ax.text(total * 0.65, 70.5, "外采乙烯油制与低效率煤制\n在下跌周期最先减产", fontsize=11.5, color="#111")
-
     # legend
     legend = [
         Line2D([0], [0], color="#d6e9c6", lw=10, label="一体化油制"),
@@ -81,7 +75,7 @@ def main():
     ]
     ax.legend(handles=legend, loc="lower left", frameon=False, fontsize=11, ncol=2)
 
-    fig.text(0.05, 0.06, "注：边际成本为动态概念，受乙烯、煤价、电价、装置效率及一体化程度影响；图中为研究框架下的近似梯队。", fontsize=11.5, color="#222")
+    fig.text(0.05, 0.06, "EG边际成本梯队是动态变化的，产能出清通常表现为“转产—降负—退出”的渐进过程，而非简单停产。", fontsize=11.5, color="#222")
     fig.text(0.90, 0.06, "CIEC", fontsize=20, fontweight="bold", color="#555")
 
     fig.savefig("results/pictures/eg-marginal-cost-curve-bauxite-style.png", dpi=170, bbox_inches="tight")

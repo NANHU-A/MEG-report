@@ -44,20 +44,17 @@ def fmt(v, digits=1):
 
 
 def main():
-    # 口径说明：以已确认的图片信息 + 公共公开文本整理，部分值为公开口径/估算
+    # 口径说明：按用户指定地区合并——河南并入华北，华中+西南合并
     rows = [
-        ["聚酯总量", "8972", "+5.1%", "7984", "+6.88%"],
-        ["涤纶长丝", "5491", "+4.1%", "—", "—"],
-        ["涤纶短纤", "1004", "+5.6%", "882", "+8.9%"],
-        ["瓶片", "2147", "+5.1%", "1605(YTD)", "+13.0%(YTD)"],
-        ["切片(PET)", "878", "+3.5%", "—", "—"],
-        ["薄膜(BOPET)", "680", "+3.0%", "—", "—"],
+        ["西北", "0", "100%", "0"],
+        ["华北(含河南)", "16.9%", "83.1%", "0"],
+        ["华南", "91.3%", "8.7%", "0"],
+        ["华东", "87.5%", "7.7%", "4.8%"],
+        ["东北", "100%", "0", "0"],
+        ["华中+西南", "23.4%", "76.6%", "0"],
     ]
 
-    cap_growth = np.array([5.1, 4.1, 5.6, 5.1, 3.5, 3.0])
-    out_growth = np.array([6.88, np.nan, 8.9, 13.0, np.nan, np.nan])
-    labels = ["总量", "长丝", "短纤", "瓶片", "切片", "薄膜"]
-    x = np.arange(len(labels))
+    col_labels = ["地区", "石脑油制", "合成气制", "MTO制"]
 
     fig = plt.figure(figsize=(16, 9), dpi=160)
     fig.patch.set_facecolor("#efefef")
@@ -94,101 +91,21 @@ def main():
     )
     fig.text(0.92, 0.945, "CIEC", fontsize=28, fontweight="bold", color="#5a5a5a")
 
-    # 左侧：增速对比图
-    ax = fig.add_axes([0.06, 0.33, 0.54, 0.43], facecolor="none")
-    ax2 = ax.twinx()
-    width = 0.34
-
-    cap_bars = ax.bar(
-        x - width / 2,
-        cap_growth,
-        width,
-        color="#3d66ad",
-        label="产能增速（%）",
-        zorder=3,
-    )
-    out_line = ax2.plot(
-        x,
-        out_growth,
-        color="#ec7c2d",
-        marker="o",
-        lw=2.8,
-        ms=6.5,
-        label="产量增速（%）",
-        zorder=4,
-    )
-
-    for i, v in enumerate(cap_growth):
-        ax.text(
-            i - width / 2,
-            v + 0.18,
-            f"{v:.1f}%",
-            ha="center",
-            va="bottom",
-            fontsize=10.5,
-            color="#1f2a3a",
-        )
-
-    for i, v in enumerate(out_growth):
-        if np.isnan(v):
-            continue
-        ax2.text(
-            i,
-            v + 0.25,
-            f"{v:.1f}%",
-            ha="center",
-            va="bottom",
-            fontsize=10.5,
-            color="#7a3f00",
-        )
-
-    ax.set_title("聚酯及下游细分产品增速对比", fontsize=21, pad=16)
-    ax.set_xticks(x)
-    ax.set_xticklabels(labels, fontsize=11.5)
-    ax.set_ylim(0, 7.2)
-    ax.set_ylabel("产能增速（%）", fontsize=11.5)
-    ax.grid(axis="y", color="#d0d0d0", lw=1.0, alpha=0.8)
-    ax.set_axisbelow(True)
-
-    ax2.set_ylim(0, 14.5)
-    ax2.set_ylabel("产量增速（%）", fontsize=11.5)
-
-    for sp in ["top", "right", "left", "bottom"]:
-        ax.spines[sp].set_visible(False)
-        ax2.spines[sp].set_visible(False)
-    ax.tick_params(axis="both", length=0)
-    ax2.tick_params(axis="both", length=0)
-
-    handles = [
-        Line2D([0], [0], color="#3d66ad", lw=8),
-        Line2D([0], [0], color="#ec7c2d", lw=3, marker="o", markersize=6),
-    ]
-    labels_legend = ["产能增速（左轴）", "产量增速（右轴）"]
-    ax.legend(
-        handles,
-        labels_legend,
-        loc="lower center",
-        bbox_to_anchor=(0.49, -0.20),
-        ncol=2,
-        frameon=False,
-        fontsize=10.5,
-    )
-
     # 右侧：表格
-    ax_tbl = fig.add_axes([0.63, 0.25, 0.33, 0.57], facecolor="none")
+    ax_tbl = fig.add_axes([0.05, 0.31, 0.90, 0.45], facecolor="none")
     ax_tbl.set_axis_off()
-    ax_tbl.set_title("2025年聚酯及五个细分的产能/产量增速表", fontsize=18, pad=10)
+    ax_tbl.set_title("各地区工艺占比（河南并入华北，华中+西南合并）", fontsize=20, pad=10)
 
     table = ax_tbl.table(
         cellText=rows,
-        colLabels=["品种", "2025产能", "产能增速", "2025产量", "产量增速"],
+        colLabels=col_labels,
         cellLoc="center",
         colLoc="center",
         loc="center",
-        bbox=[0.0, 0.08, 1.0, 0.82],
+        bbox=[0.0, 0.02, 1.0, 0.88],
     )
     table.auto_set_font_size(False)
-    table.set_fontsize(10.2)
+    table.set_fontsize(11.5)
 
     for (r, c), cell in table.get_celld().items():
         cell.set_edgecolor("#d2d2d2")
@@ -202,46 +119,38 @@ def main():
             cell.set_facecolor("#ffffff")
 
     ax_tbl.text(
-        0.02,
         0.01,
-        "注：切片=PET fiber chip；瓶片数据为公开可读口径，部分产量采用YTD或留空。",
-        fontsize=9.5,
+        -0.10,
+        "注：石脑油制=SD/Shell/Dow/BASF/UCC；MTO制含 MTO, SHELL氧化法；其余无对应装置记0。",
+        fontsize=9.8,
         color="#444",
         transform=ax_tbl.transAxes,
     )
 
-    # 底部结论区，避开主图和表格，减少重叠
     fig.text(
         0.06,
-        0.15,
-        "结论：2025年聚酯总量维持增长，但细分分化更明显。",
-        fontsize=14.5,
+        0.12,
+        "结论：石脑油制为主体，合成气制在西北/华北（含河南）/华中+西南占比较高，华东同时保有少量MTO。",
+        fontsize=14,
         color="#111",
     )
     fig.text(
         0.06,
-        0.11,
-        "- 短纤、瓶片增速高于总量，偏强；长丝与切片偏稳；薄膜增速相对最慢。",
-        fontsize=13.5,
-        color="#111",
-    )
-    fig.text(
-        0.06,
-        0.075,
-        "- 公开文本未完整披露的品种，以‘—’标注，避免过度推断。",
-        fontsize=13.5,
+        0.08,
+        "- 河南并入华北后，华北合成气制占比明显抬升；华中+西南整体以合成气制为主。",
+        fontsize=13,
         color="#111",
     )
 
     fig.text(
         0.50,
         0.02,
-        "数据来源：CCF 2025年报图片信息 + 公开行业资料整理（部分为估算口径）",
+        "数据来源：用户提供图片 + 工艺口径对应表整理（按地区合并口径）",
         ha="center",
         fontsize=12.5,
         color="#222",
     )
-    fig.text(0.97, 0.02, "32", ha="right", fontsize=26, color="#222")
+    fig.text(0.97, 0.02, "55", ha="right", fontsize=26, color="#222")
 
     plt.savefig("results/pictures/polyester_2025_comparison.png", dpi=170, bbox_inches="tight")
     plt.savefig("results/pictures/polyester_2025_comparison.svg", bbox_inches="tight")

@@ -129,10 +129,10 @@ ax.bar(x, effective, width=0.52, color=[region_colors[r] for r in regions], edge
 for i, r in enumerate(regions):
     ax.text(i, nominal[i] + 18, f"{nominal[i]:.1f}", ha="center", va="bottom", fontsize=11, color="#666")
     ax.text(i, effective[i] + 18, f"{effective[i]:.1f}", ha="center", va="bottom", fontsize=12, fontweight="bold", color="#111")
-    ax.text(i, -65, f"{r}\n利用率 {summary[r]['util']*100:.0f}%", ha="center", va="top", fontsize=12, color="#2f3b46")
+    ax.text(i, -65, f"{r}", ha="center", va="top", fontsize=12, color="#2f3b46")
 
 ax.set_xticks(x)
-ax.set_xticklabels(["中东", "亚洲", "北美"], fontsize=13)
+ax.set_xticklabels(["", "", ""], fontsize=13)
 ax.set_ylabel("万吨", fontsize=13)
 ax.set_ylim(0, max(nominal) * 1.20)
 ax.grid(axis="y", color="#d6dbe0", lw=0.9)
@@ -142,11 +142,17 @@ for spine in ["top", "right"]:
 
 ax.legend(loc="upper left", frameon=False, fontsize=11)
 
-note = FancyBboxPatch((0.80, 0.67), 0.17, 0.19, boxstyle="round,pad=0.012,rounding_size=0.018", facecolor="#fff", edgecolor="#8d8d8d", linewidth=1.1, transform=fig.transFigure)
+note = FancyBboxPatch((0.79, 0.61), 0.19, 0.26, boxstyle="round,pad=0.012,rounding_size=0.018", facecolor="#fff", edgecolor="#8d8d8d", linewidth=1.1, transform=fig.transFigure)
 fig.patches.append(note)
-fig.text(0.815, 0.82, "2025年Q2三分化\n中东大量停车\n亚洲春季检修\n北美稳定运行", fontsize=14, color="#c00000")
+fig.text(0.805, 0.845, "2025年Q2三分化", fontsize=13.5, color="#c00000", fontweight="bold")
+fig.text(0.805, 0.792, "中东：大量停车", fontsize=11.8, color="#30363d")
+fig.text(0.805, 0.748, "亚洲：春季检修", fontsize=11.8, color="#30363d")
+fig.text(0.805, 0.704, "北美：稳定运行", fontsize=11.8, color="#30363d")
 
-fig.text(0.80, 0.60, "有效产能口径：\n运行=100%\n降负=70%\n检修/开停车=30%\n停车=0%", fontsize=11.5, color="#30363d")
+fig.text(0.805, 0.655, "有效产能口径", fontsize=10.8, color="#30363d", fontweight="bold")
+fig.text(0.805, 0.635, "运行=100%  降负=70%", fontsize=10.3, color="#30363d")
+fig.text(0.805, 0.616, "检修/开停车=30%", fontsize=10.3, color="#30363d")
+fig.text(0.805, 0.597, "停车=0%", fontsize=10.3, color="#30363d")
 
 fig.text(0.08, 0.08, "结论：供给端显著收缩，对EG价格形成有力支撑。", fontsize=14, color="#1f2a33")
 fig.text(0.08, 0.05, "注：有效产能为根据表内装置状态做的近似加权整合，适合用于地区供给格局展示。", fontsize=11.5, color="#555")
